@@ -1,0 +1,8 @@
+Bootstrap: docker
+From: tensorflow/tensorflow:2.4.0-gpu
+
+%files
+    tensorflow_test.py /opt/
+
+%runscript
+    python /opt/tensorflow_test.py
